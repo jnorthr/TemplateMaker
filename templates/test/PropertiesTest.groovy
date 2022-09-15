@@ -5,7 +5,7 @@ ${packageName}
 import spock.lang.*
 
 // To support the feature to copy stdout and stderr module output as a redirect back to the spock framework
-//@Grab('org.springframework.boot:spring-boot:1.2.1.RELEASE')
+//@Grab('org.springframework.boot:spring-boot:2.7.3.RELEASE')
 import org.springframework.boot.test.OutputCapture
 
 /*

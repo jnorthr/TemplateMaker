@@ -5,7 +5,7 @@ ${packageName}
 import spock.lang.*
 
 // To support the feature to copy stdout and stderr module output as a redirect back to the spock framework
-//@Grab('org.springframework.boot:spring-boot:1.2.1.RELEASE')
+//@Grab('org.springframework.boot:spring-boot:2.7.3.RELEASE')
 import org.springframework.boot.test.OutputCapture
 
 /*
@@ -38,7 +38,7 @@ dependencies {
     compile 'org.apache.ivy:ivy:2.3.0'
 
     testCompile 'org.spockframework:spock-core:2.0-groovy-3.0'
-    testCompile 'org.springframework.boot:spring-boot:1.2.1.RELEASE'
+    testCompile 'org.springframework.boot:spring-boot:2.7.3.RELEASE'
 }
 
 Or you can include these lines at the top of this source code when directly compiling this script using groovyc
@@ -46,7 +46,7 @@ Or you can include these lines at the top of this source code when directly comp
 @Grab('org.spockframework:spock-core:2.0-groovy-3.0')
 import spock.lang.*
 
-@Grab('org.springframework.boot:spring-boot:1.2.1.RELEASE')
+@Grab('org.springframework.boot:spring-boot:2.7.3.RELEASE')
 import org.springframework.boot.test.OutputCapture
 
 NOTE: If you try to compile this source using gradle and the @Grab stmts are NOT commented out, you will get an ivy failure like:
@@ -102,12 +102,12 @@ class ${primaryClassName}Test extends spock.lang.Specification {
     // 2nd Test
     def "Setup ${primaryClassName} to save a file"() { 
     	setup: 
-  			${primaryClassName} ch= new ${primaryClassName}();
+  		${primaryClassName} ch= new ${primaryClassName}();
     	when:
-			def txt = ch.toString();
- 			println txt;
+		def txt = ch.toString();
+ 		println txt;
 	    then:
-		    // Asserts are implicit and not need to be stated.
+		// Asserts are implicit and not need to be stated.
     		// Change "==" to "!=" and see what's happening!
 	    	ch.toString() != null; 
   } // end of spec

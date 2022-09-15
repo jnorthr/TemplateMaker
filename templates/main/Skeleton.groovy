@@ -22,7 +22,6 @@ import groovy.transform.*;
  * ${primaryClassName} class description
  *
  * This is code with all bits needed to do a project
-
  *
  */ 
  @Canonical 

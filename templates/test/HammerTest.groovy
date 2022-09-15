@@ -1,7 +1,7 @@
 ${packageName}
 
 // To support Spock Test Framework - uncomment @Grab lines if compiling directly with groovyc and not gradle build tool
-//@Grab('org.spockframework:spock-core:1.2-groovy-2.5')
+//@Grab('org.spockframework:spock-core:2.0-groovy-3.0')
 import spock.lang.*
 
 // To support the feature to copy stdout and stderr module output as a redirect back to the spock framework
@@ -102,12 +102,12 @@ class HammerTest extends spock.lang.Specification {
     // 2nd Test
     def "Setup ${primaryClassName} to save a file"() { 
     	setup: 
-  			${primaryClassName} ch= new ${primaryClassName}();
+  		${primaryClassName} ch= new ${primaryClassName}();
     	when:
-			def txt = ch.toString();
- 			println txt;
+		def txt = ch.toString();
+ 		println txt;
 	    then:
-		    // Asserts are implicit and not need to be stated.
+		// Asserts are implicit and not need to be stated.
     		// Change "==" to "!=" and see what's happening!
 	    	ch.toString() != null; 
   } // end of spec

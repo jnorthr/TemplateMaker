@@ -18,7 +18,7 @@ ${packageName}
 
 object ${primaryClassName} {
   def main(args: Array[String]) {
-    println("Hello, ${primaryClassName} of the ${projectName} project!")
+    println("Hello, ${primaryClassName} of the ${projectName} scala project!")
   }
 }
 

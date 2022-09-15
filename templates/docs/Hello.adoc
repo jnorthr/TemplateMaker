@@ -5,9 +5,6 @@ ${author} <${email}>
 :description: Sample document using ant replacement filters.
 :keywords: Asciidoctor, header, footer, docinfo
 :numbered:
-:github_url: https://github.com/jnorthr/asciidoctor-gradle-examples
-:github_project_path: {github_url}/tree/master
-:github_fork_badge: https://s3.amazonaws.com/github/ribbons/forkme_right_red_aa0000.png
 
 [.badge]
 image::{github_fork_badge}[link="{github_url}"]
