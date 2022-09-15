@@ -1,0 +1,30 @@
+= https://github.com/quickman/Projects/blob/master/README.md[Projects Project README.md]
+Martin Quickman <martin.quickman@yahoo.co.uk>
+:toc: right
+:icons: font
+:description: Project Builder Templates.
+:keywords: git, github, gradle, groovy, project, travis, builder, templates
+:numbered:
+:github_url: https://github.com/Projects
+:github_project_path: {github_url}/tree/master
+:github_fork_badge: https://s3.amazonaws.com/github/ribbons/forkme_left_red_aa0000.png
+
+[.badge]
+image:{github_fork_badge}[link="{github_url}"] Travis Build Status for [red]*Projects* Master Branch: image:https://travis-ci.com/Projects.svg?branch=master[Build Status,link=https://travis-ci.com/quickman/Projects]
+
+
+''''
+
+TIP: [red]*Projects* *README*
+
+''''
+
+== Home Page of This Project
+
+=== Tools Class Documentation
+
+''''
+
+IMPORTANT: This Project is written by _Martin Quickman_ with *Gradle version 7.5*
+
+''''
