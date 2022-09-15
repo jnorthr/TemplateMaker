@@ -1,0 +1,42 @@
+// placeholder replacement Map
+class Config {
+    String name
+}
+
+// Sets a project property, available everywhere
+def config = new Config()
+
+ext.m = [:]
+
+task (readConf){
+    config.name = "maker"
+}
+
+// File: test.gradle
+task (resolveProperties,dependsOn: [readConf]).doFirst{
+        println "resolveProperties is $config.name"
+        println "hasProperty(author) -> ${project.hasProperty('author') ? project.property('author') : 'default author for hasProperty()'}"
+        println "findProperty(author) -> ${project.findProperty('author') ?: 'default author value for findProperty'}"
+        println "hasProperty(email) -> ${project.hasProperty('email') ? project.property('email') : 'default email for hasProperty()'}"
+        println "findProperty(email) -> ${project.findProperty('email') ?: 'default email value for findProperty'}"
+
+	String txt = project.hasProperty('author') ? project.property('author') : 'default author value for hasProperty()';
+	println "... txt="+txt;
+
+	m['gitHubUser']=project.hasProperty('gitHubUser') ? project.property('gitHubUser') : 'Whats my github name?';	
+	m['author']=project.findProperty('author') ?: 'Who did this?';
+	m['email']=project.findProperty('email') ?: 'men@work.com';
+	m['year']=project.findProperty('year') ?: '2023';
+	m['projectRoot']=project.findProperty('projectRoot') ?: '/Users/fred/Dropbox/Projects';
+	m['projectName']=project.findProperty('projectName') ?: 'Tools';
+	m['projectLocation']=project.findProperty('projectLocation') ?: '/Users/fred/Dropbox/Projects/Tools';
+	m['packageFolder']=project.findProperty('packageFolder') ?: '/com/fred/toolkit';
+	m['packageName']=project.findProperty('packageName') ?: 'package com.fred.toolkit;';
+	m['packagePrefix']=project.findProperty('packagePrefix') ?: 'com.fred.toolkit.';
+	m['primaryClassName']=project.findProperty('primaryClassName') ?: 'Hammer';
+	m['classes']=project.findProperty('classes') ?: '';
+	//m['']=project.findProperty('') ?: '';
+	
+	println "... list m="
+	m.each{k,v-> println "k=[${k}] v=[${v}]"}
+} // end of task
