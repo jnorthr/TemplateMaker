@@ -14,13 +14,6 @@ repositories {
     mavenCentral()
 } // end of repos
 
-
-dependencies {
-    // Use the latest Groovy version for building this library
-    implementation 'org.apache.groovy:groovy-all:4.0.5'
-} // end of dependencies
-
-
 dependencies {
     // Use the latest Groovy version for building this library
     implementation 'org.apache.groovy:groovy-all:4.0.5'
