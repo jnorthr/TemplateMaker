@@ -1,4 +1,4 @@
-package com.jim.toolkit.tools;
+package com.toolkit.tools;
 
 // To support Spock Test Framework - uncomment @Grab lines if compiling directly with groovyc and not gradle build tool
 //@Grab('org.spockframework:spock-core:1.1-groovy-2.4')
@@ -9,7 +9,7 @@ import spock.lang.*
 import org.springframework.boot.test.system.OutputCaptureRule
 
 /*
- * Copyright 2017 the original author Jim Northrop or authors.
+ * Copyright 2022 the original author Jim Northrop or authors.
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
