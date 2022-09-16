@@ -19,3 +19,17 @@ dependencies {
     // Use the latest Groovy version for building this library
     implementation 'org.apache.groovy:groovy-all:4.0.5'
 } // end of dependencies
+
+
+dependencies {
+    // Use the latest Groovy version for building this library
+    implementation 'org.apache.groovy:groovy-all:4.0.5'
+
+    // Use the awesome Spock testing and specification framework
+    testImplementation 'org.spockframework:spock-core:2.2-groovy-4.0'
+    testImplementation 'junit:junit:4.13.2'
+    testImplementation 'org.springframework.boot:spring-boot:2.4.5'
+    testImplementation "org.scala-lang:scala-library:2.13.6"
+    testImplementation group: 'org.springframework.boot', name: 'spring-boot-starter-test', version: '2.7.3'
+    //testImplementation group: 'org.scalatest', name: 'scalatest_2.12', version: '3.0.3'    
+} // end of dependencies
